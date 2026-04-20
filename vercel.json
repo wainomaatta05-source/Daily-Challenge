@@ -1,14 +1,7 @@
 {
   "version": 2,
-  "functions": {
-    "challenge.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
-  "routes": [
-    { "src": "/api/challenge", "dest": "/challenge.js" },
-    { "src": "/icons/(.*)", "dest": "/icons/$1" },
-    { "src": "/(.*\\.(json|js|png))", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/api/challenge", "destination": "/challenge.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
