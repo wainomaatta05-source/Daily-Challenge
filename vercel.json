@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/challenge", "destination": "/api/challenge.js" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
